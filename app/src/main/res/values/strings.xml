@@ -18,5 +18,13 @@
     <string name="RONG_YI">戎懿\n俄亥俄州立大学大学肿瘤放疗科助理教授</string>
     <string name="WANG_LE_JING">王乐晶\n德国慕尼黑工业大学理学博士</string>
     <string name="INSTRUCTIONS">您好！这里是广东省影响引导治疗技术创新团队．很高兴向您介绍我们的主要成员并带您熟悉google glass的相关操作。请一只手指单击触摸板。...</string>
+
+    <string name="text_large_specification">textAppearanceLarge (Roboto Thin 64px)</string>
+    <string name="text_medium_specification">textAppearanceMedium (Roboto Light 40px)</string>
+    <string name="text_small_specification">textAppearanceSmall (Roboto Regular 24px)</string>
+
+    <string name="text_large">Lorem ipsum dolor sit ameti,</string>
+    <string name="text_medium">consectetur adipiscing elit. Aliquam mollis fringilla ultrices.</string>
+    <string name="text_small">Vivamus ultricies velit nunc, id ornare elit rhoncus id. Cras felis est, fringilla sed nisi non, pulvinar vulputate ante.</string>
     
 </resources>

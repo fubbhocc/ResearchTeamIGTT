@@ -6,8 +6,10 @@ import com.google.android.glass.widget.CardScrollView;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -26,6 +28,8 @@ import java.util.List;
  */
 public class IGTTMainActivity extends Activity {
 
+    private static final String TAG = IGTTMainActivity.class.getSimpleName();
+    
     private enum Action {
         INSTRUCTIONS(R.string.INSTRUCTIONS,R.drawable.glasslogo),
         XING_LEI(R.string.XING_LEI, R.drawable.xinglei),
@@ -67,30 +71,14 @@ public class IGTTMainActivity extends Activity {
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-
-//        mView = buildView();
-
         mCardScroller = new CardScrollView(this);
         setupAdapter();
         setupClickListener();
-        setContentView(mCardScroller);
-        // Handle the TAP event.
-        mCardScroller.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Plays disallowed sound to indicate that TAP actions are not supported.
-                AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-                am.playSoundEffect(Sounds.DISALLOWED);
-            }
-        });
         setContentView(mCardScroller);
     }
 
     private void setupAdapter() {
         mAdapter = new CardAdapterWithMutations();
-
-        //CardBuilder card = new CardBuilder(this, CardBuilder.Layout.CAPTION).addImage(R.drawable.beach).setText(R.string.INSTRUCTIONS);
-        
         // Insert initial cards, one of each kind.
         for (int i = 0; i < 13; i++) {
             int position = i;
@@ -159,39 +147,21 @@ public class IGTTMainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-                /*switch (mAdapter.getActionAt(position)) {
-                    case DELETION_HERE:
+                Log.d(TAG,"Clicked view at position " + position + ", row-id " + id);
+               switch (mAdapter.getActionAt(position)) {
+                    case INSTRUCTIONS:
                         am.playSoundEffect(Sounds.TAP);
-                        deleteCard(position);
+                        startActivity(new Intent(IGTTMainActivity.this,TextAppearanceActivity.class).addFlags(position));
+                        //deleteCard(position);
                         break;
-                    case NAVIGATION_TO_BEGIN:
+                    case XING_LEI:
                         am.playSoundEffect(Sounds.TAP);
-                        navigateToCard(0);
-                        break;
-                    case NAVIGATION_TO_END:
-                        am.playSoundEffect(Sounds.TAP);
-                        navigateToCard(mAdapter.getCount() - 1);
-                        break;
-                    case INSERTION_AT_BEGIN:
-                        am.playSoundEffect(Sounds.TAP);
-                        insertNewCard(0);
-                        break;
-                    case INSERTION_BEFORE:
-                        am.playSoundEffect(Sounds.TAP);
-                        insertNewCard(position);
-                        break;
-                    case INSERTION_AFTER:
-                        am.playSoundEffect(Sounds.TAP);
-                        insertNewCard(position + 1);
-                        break;
-                    case INSERTION_AT_END:
-                        am.playSoundEffect(Sounds.TAP);
-                        insertNewCard(mAdapter.getCount());
+                        //navigateToCard(0);
                         break;
                     default:
                         am.playSoundEffect(Sounds.DISALLOWED);
                         break;
-                }*/
+                }
             }
         });
     }
