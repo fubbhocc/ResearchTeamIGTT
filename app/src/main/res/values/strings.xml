@@ -2,9 +2,10 @@
 <resources>
 
     <string name="app_name">ResearchTeamIGTT</string>
-    <string name="title_activity_igttmain">影像治疗创新团队</string>
+    <string name="title_activity_igttmain">影像引导广创队</string>
     <string name="hello_world">Hello world!</string>
     <string name="Footnote">详细信息请点击</string>
+    <string name="CANCEL">向下滑动返回上页</string>
     <string name="XING_LEI">邢磊\n项目负责人\n斯坦福大学终身教授</string>
     <string name="XIE_YAO_QIN">谢耀钦\n常务负责人\n中国科学院深圳先进技术研究院研究员</string>
     <string name="WANG_LEI">王磊\n依托中心主任\n中国科学院深圳先进技术研究院研究员</string>
@@ -19,6 +20,21 @@
     <string name="WANG_LE_JING">王乐晶\n德国慕尼黑工业大学理学博士</string>
     <string name="INSTRUCTIONS">您好！这里是广东省影响引导治疗技术创新团队．很高兴向您介绍我们的主要成员并带您熟悉google glass的相关操作。请一只手指单击触摸板。...</string>
 
+    <string name="XING_LEI_D">邢磊，斯坦福大学终身教授、汉墓深讲席教授、肿瘤放射物理专业主任。曾获美国放射治疗学会（ASTRO）基础科学研究学者奖、美国癌症学会研究学者奖和美国国防部乳腺癌研究概念创意奖等十余项奖励。项目负责人。</string>
+    <string name="XIE_YAO_QIN_D">谢耀钦博士，中国科学院深圳先进技术研究院研究员、博导，深圳市海外高层次人才。长期致力于影像引导治疗方面的研究，主持国家自然科学基金项目2\n项，参加973项目2项和美国NIH基金1\n项。负责项目的产业化和学术工作。</string>
+    <string name="WANG_LEI_D">王磊，深圳市政府特殊津贴专家，中科院“百人计划”研究员，博导，中科院低成本健康“十二五”规划总体组组长；先进医疗器械专项专家组成员；深圳市地方级领军人才、杰青，深圳市“低成本健康重点实验室”主任。</string>
+    <string name="GU_JIA_D">辜嘉博士，中国科学院深圳先进技术研究院研究员、博导2005 年于法国雷恩大学获博士学位，并获大使馆奖学金。曾于韩国三星研究所和美国STI 进行科研工作，承担美国军方项目和NIH 项目，\n发表论文三十余篇。</string>
+    <string name="CHEN_YAN_D">陈艳博士，中国科学院深圳先进技术研究院副研究员。2009 年至 2010 年在美国普林斯顿大学从事博士后研究工作。\n在美国工作期间研发了新型的低成本高质量因子的微纳激光芯片，开发了多种创新的快速复合纳米结构制造工艺。</string>
+    <string name="ZHOU_SHOU_JUN_D">周寿军博士，中国科学院深圳先进技术研究院副研究员。在医学图像处理与模式识别领域有着 10 年左右的研发经历。在影像引导精准放疗和肿瘤的动态跟踪方面作了大量的工作，并发表多篇学术论文。</string>
+    <string name="ZHOU_YUNG_JIN_D">周永进博士，中国科学院深圳先进技术研究院副研究员，深圳市海外高层次人才。博士毕业后先后加入美国俄勒冈医科大学和香港理工大学，作为核心成员参与生命体征信号的监测分析和医学超声信号运动估计方法研究等项目。</string>
+    <string name="LI_ZHI_CHENG_D">李志成博士，中国科学院深圳先进技术研究院副研究员，深圳市后备级高层次人才。2009年获北京邮电大学博士学位。曾作为国家公派博士生在新加坡南洋理工大学学习，并获驻新使馆颁发的优秀公派留学生奖。</string>
+    <string name="XIONG_JING_D">熊璟博士，中国科学院深圳先进技术研究院助理研究员。2010年在美国普渡大学IUPUI校区普度工学院从事博士后研究,于2012年加入中国科学院深圳先进技术研究院。作为主要人员参与了多项科研项目。</string>
+    <string name="WEN_NING_D">温宁博士，美国韦恩州立大学临床助理教授、亨利福特医疗系统 West Bloomfield 医院首席物理师。目前的研究领域包括适应性放射治疗和立体定向放射手术的图像引导。为中国三甲医院提供咨询服务。</string>
+    <string name="RONG_YI_D">戎懿博士，俄亥俄州立大学大学肿瘤放疗科助理教授，，毕业于美国威斯康星大学医学物理专业，主要研究方向为基于锥束CT图像的自适应放射治疗剂量计算研究以及电子近距离放射治疗中剂量的校准。</string>
+    <string name="WANG_LE_JING_D">王乐晶博士于 2012 年获德国慕尼黑工业大学理学博士学位（荣誉理学博士）\n。主要研究方向包括图像引导手术和医学增强现实技术。主持了关于光学图像增强移动式C形臂X射线机的相关技术研发和临床试验。</string>
+    <string name="INSTRUCTIONS_D">影像引导治疗技术创新团队开展的项目内容包括影像引导治疗新技术的研发以及基于平板探测器的移动式C臂X光机的产业化，执行时间从2012年1月至2016年12月。主要成员有...\n(请下滑后前后滑动滑动手指)</string>
+    
+    
     <string name="text_large_specification">textAppearanceLarge (Roboto Thin 64px)</string>
     <string name="text_medium_specification">textAppearanceMedium (Roboto Light 40px)</string>
     <string name="text_small_specification">textAppearanceSmall (Roboto Regular 24px)</string>

@@ -148,20 +148,8 @@ public class IGTTMainActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
                 Log.d(TAG,"Clicked view at position " + position + ", row-id " + id);
-               switch (mAdapter.getActionAt(position)) {
-                    case INSTRUCTIONS:
-                        am.playSoundEffect(Sounds.TAP);
-                        startActivity(new Intent(IGTTMainActivity.this,TextAppearanceActivity.class).addFlags(position));
-                        //deleteCard(position);
-                        break;
-                    case XING_LEI:
-                        am.playSoundEffect(Sounds.TAP);
-                        //navigateToCard(0);
-                        break;
-                    default:
-                        am.playSoundEffect(Sounds.DISALLOWED);
-                        break;
-                }
+                am.playSoundEffect(Sounds.TAP);
+                startActivity(new Intent(IGTTMainActivity.this,TextAppearanceActivity.class).addFlags(position));
             }
         });
     }
